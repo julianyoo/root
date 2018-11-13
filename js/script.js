@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     function fader() {
-        $("#main").fadeIn(700);
+        $(this).fadeIn(700);
     }
 
     $('#main').load('home.html', {}, fader);
