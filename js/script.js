@@ -1,4 +1,4 @@
 $('#reveal').click(function(){
     alert("Hello! I am an alert box!!");
-    /* $('#main').load('projects.html'); */
+     $('#ajax-content').load('projects.html'); 
 });
