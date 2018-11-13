@@ -1,5 +1,10 @@
 $(document).ready(function(){
-    $('#main').load('home.html');
+
+    function fader() {
+        $("#main").fadeIn(700);
+    }
+
+    $('#main').load('home.html', {}, fader);
 
     $('#projects').click(function(){
         event.preventDefault();
