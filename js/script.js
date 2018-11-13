@@ -1,10 +1,6 @@
 $(document).ready(function(){
 
-    function fader() {
-        $(this).fadeIn(700);
-    }
-
-    $('#main').load('home.html', {}, fader);
+    $('#main').load('home.html').hide().fadeIn();
 
     $('#projects').click(function(){
         event.preventDefault();
