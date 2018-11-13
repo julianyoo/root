@@ -1,4 +1,4 @@
-$('ajax-button').click(function(){
+$('#reveal').click(function(){
     alert("Hello! I am an alert box!!");
-    $('#main').load('projects.html');
+    /* $('#main').load('projects.html'); */
 });
