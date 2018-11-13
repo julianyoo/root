@@ -1,3 +1,3 @@
-$("projects").click(function(){
+$("#projects").click(function(){
     $( "#main" ).load( "/projects.html" );
 });
