@@ -1,3 +1,3 @@
 $('#ajax-button').click(function(){
-    $('#main').load( 'projects.html');
+    $('#main').load('projects.html');
 });
