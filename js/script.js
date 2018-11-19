@@ -20,6 +20,6 @@ $(document).ready(function(){
 
     function showPage() {
     document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
+    document.getElementById("main").style.display = "block";
     }
 });
