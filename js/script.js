@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $('#main').load('home.html').hide().fadeIn(1000);
 
-    $('#projects','#project-button').click(function(){
+    $('#projects').click(function(){
         event.preventDefault();
         $('#main').load('projects.html').hide().fadeIn(1000);
     });
