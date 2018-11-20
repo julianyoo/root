@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     $('#home-projects').click(function(){
         event.preventDefault();
-        $('#main').load('projects.html').hide().fadeIn(1000);
+        $('#home-main').load('projects.html').hide().fadeIn(1000);
     });
 
     $('#home').click(function(){
