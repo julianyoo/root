@@ -12,15 +12,44 @@
 # Count how many rounds the player has played
 
 import random
-a=random.randint(1,10)
-print(a) 
 
+dice = [0,0]
 round = 0
+play = "ROLL"
 
-print("Please type 'ROLL' or 'QUIT'.")
-play = input()
-if play == "ROLL":
-    print("You're rolling")
-elif play == "QUIT":
-    print("Good-bye!")
-    print("You have played" , round , "rounds.")
+while play == "ROLL":
+
+    print("Please type 'ROLL' or 'QUIT'.")
+    play = input()
+    play = play.upper()
+
+    if play == "ROLL":
+        dice[0] = random.randint(1,6)
+        dice[1] = random.randint(1,6)
+        print("First die:",dice[0])
+        print("Second die:",dice[1])
+        result = dice[0] + dice[1]
+        print("Total:",result)
+
+        if result == 7 or result == 11:
+            round=round+1
+            print("You win!")
+            break
+
+        elif result == 2 or result == 3 or result == 12:
+            round=round+1
+            print("You lose!")
+            break
+        
+        else:
+            round=round+1
+            print("You get to play another round!")           
+
+    elif play == "QUIT":
+        print("Good-bye!")
+
+    else:
+        print("Please input a valid response. (ROLL/QUIT)")
+        play = "ROLL"
+
+print("Rounds played:" , round)
