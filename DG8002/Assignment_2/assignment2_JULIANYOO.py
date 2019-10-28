@@ -10,6 +10,7 @@
 # If roll = 2,3,or 12 print "YOU LOSE" and exit LOOP
 # If roll = 4,5,6,8,9,10, go back to line 3
 # Count how many rounds the player has played
+# GITHUB TEST
 
 import random
 
