@@ -8,20 +8,19 @@
         function addCart(cost, buttonType) {
 
             if (buttonType == "item1") {
-                document.getElementById(buttonType).disabled = true;
+                this.item1.disabled = true;
             } else if (buttonType == "item2") {
-                document.getElementById(buttonType).disabled = true;
+                this.item2.disabled = true;
             } else if (buttonType == "item3") {
-                document.getElementById(buttonType).disabled = true;
+                this.item3.disabled = true;
             }
 
             cartTotal = cartTotal + cost;
-            document.getElementById("total").innerHTML = "$" + cartTotal.toString() + ".00";
-
+            this.total.innerHTML = "$" + cartTotal.toString() + ".00";
         }
 
         function mouseoverLionKing() {
-            document.getElementById("lionking").innerHTML =
+            this.lionking.innerHTML =
                 "Simba idolizes his father, King Mufasa, and takes to heart his own royal destiny on the plains of Africa. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother -- and former heir to the throne -- has plans of his own. The battle for Pride Rock is soon ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. Now, with help from a curious pair of newfound friends, Simba must figure out how to grow up and take back what is rightfully his.";
         }
 
@@ -30,7 +29,7 @@
         }
 
         function mouseoverMermaid() {
-            document.getElementById("mermaid").innerHTML =
+            this.mermaid.innerHTML =
                 "In Disney's beguiling animated romp, rebellious 16-year-old mermaid Ariel (Jodi Benson) is fascinated with life on land. On one of her visits to the surface, which are forbidden by her controlling father, King Triton, she falls for a human prince. Determined to be with her new love, Ariel makes a dangerous deal with the sea witch Ursula (Pat Carroll) to become human for three days. But when plans go awry for the star-crossed lovers, the king must make the ultimate sacrifice for his daughter.";
         }
 
@@ -44,11 +43,11 @@
         }
 
         function mouseoutJungleBook() {
-            document.getElementById("junglebook").innerHTML = "The Jungle Book";
+            this.junglebook.innerHTML = "The Jungle Book";
         }
 
         function purchase() {
-            if (document.getElementById("amount").value < cartTotal) {
+            if (this.amount.value < cartTotal) {
                 alert("Payment amount is less than cart total")
             } else {
                 alert('Purchase complete!')
